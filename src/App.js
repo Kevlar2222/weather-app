@@ -17,7 +17,7 @@ class App extends React.Component {
   async componentDidMount() {
     try {
       let data = await fetch(
-        "http://api.openweathermap.org/data/2.5/weather?q=London,uk&APPID=d681c7020ea993ab41891e2760024057"
+        "https://api.openweathermap.org/data/2.5/weather?q=London,uk&APPID=d681c7020ea993ab41891e2760024057"
       );
       let readable = await data.json();
       this.setState({ temperature: readable.main.temp });
@@ -30,7 +30,7 @@ class App extends React.Component {
   async getData() {
     try {
       let dataRequest = await fetch(
-        "http://api.openweathermap.org/data/2.5/weather?q=" +
+        "https://api.openweathermap.org/data/2.5/weather?q=" +
           this.state.cityText +
           "&APPID=d681c7020ea993ab41891e2760024057"
       );
