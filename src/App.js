@@ -56,9 +56,6 @@ class App extends React.Component {
       <div>
         <div id="title">
           <h1>Weather App</h1>
-          <div id="subtitle">
-            <h2>By Kevin Satti</h2>
-          </div>
         </div>
         <div id="container" className={this.state.weatherMain}>
           <div>
