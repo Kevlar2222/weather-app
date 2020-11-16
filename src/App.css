@@ -7,6 +7,7 @@ body {
 
 button {
   font-size: 1.2rem;
+  margin-bottom: 2vh;
 }
 
 h1 {
@@ -23,14 +24,14 @@ img {
   left: 25vw;
   top: 20vh;
   width: 50vw;
-  height: 80vh;
+  height: 100%;
   z-index: -1;
 }
 
 .Clouds {
   background: url("./clouds.jpg");
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
   background-position: center;
   color: white;
 }
@@ -38,7 +39,7 @@ img {
 .Clear {
   background: url("./clear.jpg");
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
   background-position: center;
   color: white;
 }
@@ -46,7 +47,7 @@ img {
 .Rain {
   background: url("./rain.jpg");
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
   background-position: center;
   color: white;
 }
@@ -54,7 +55,7 @@ img {
 .Thunderstorm {
   background: url("./storm.jpg");
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
   background-position: center;
   color: white;
 }
@@ -62,26 +63,28 @@ img {
 .Snow {
   background: url("./snow.jpg");
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
   background-position: center;
 }
 
 #container {
   font-size: 1.8rem;
-  height: 80vh;
+  height: 100vh;
+  top: 0;
   margin: auto;
   text-align: center;
-  width: 50vw;
+  width: 100%;
 }
 
 #input {
   font-size: 1.2rem;
+  margin-top: 5vh;
+  margin-bottom: 2vh;
 }
 
-#title {
-  color: rgb(5, 5, 109);
-  height: 10vh;
-  margin: auto;
-  text-align: center;
-  width: 50vw;
+.flex {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }

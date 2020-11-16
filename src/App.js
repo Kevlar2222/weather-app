@@ -54,11 +54,8 @@ class App extends React.Component {
   render() {
     return (
       <div>
-        <div id="title">
-          <h1>Weather App</h1>
-        </div>
         <div id="container" className={this.state.weatherMain}>
-          <div>
+          <div className="flex">
             <input id="input" type="text" onChange={this.cityChange}></input>
             <div></div>
             <button onClick={this.getData}>Enter City</button>
